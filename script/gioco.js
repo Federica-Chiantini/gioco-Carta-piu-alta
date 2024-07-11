@@ -1,4 +1,8 @@
-console.log("ciao");
+let youPunti = document.querySelector("#sf1 span");
+let cpuPunti = document.querySelector("#sf2 span");
+
+let punteggioYou=0;
+let punteggioCpu=0;
 
 document.getElementById("gioca").onclick= operazione;
 
@@ -11,11 +15,15 @@ function operazione(){
     let messaggio = document.getElementById("messaggio");
     if(numRand > numRand2){
         messaggio.innerHTML = "Hai vinto!"
+        punteggioYou++; 
+        youPunti.innerHTML=punteggioYou; 
     }
     else if (numRand == numRand2){
         messaggio.innerHTML = "Pareggio!"
     }
     else{
         messaggio.innerHTML = "Hai perso!"
+        punteggioCpu++; 
+        cpuPunti.innerHTML=punteggioCpu; 
     }
 }
