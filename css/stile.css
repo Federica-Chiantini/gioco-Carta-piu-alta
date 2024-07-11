@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    background: #eaecea;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+    color: #dced17;
+    font-size: 3em;
+}
+
+h2 {
+    margin: 20px 0 0;
+    text-align: center;
+    color: #dced17;
+    font-size: 2.5em;
+    text-shadow: 1px 0 #484848, -1px 0 #484848, 0 1px #484848, 0 -1px #484848; /*dare un contorno alla scritta*/
+}
+
+main {
+    max-width: 800px;
+    border: groove 8px #478648;
+    background-color: #376938;
+    min-height: 400px;
+    margin: 30px auto;
+    padding: 25px;
+}
+
+main section {
+    overflow: auto;
+    width: 600px;
+    margin: 20px auto 0;
+}
+
+
+.card {
+    width: 240px;
+    height: 320px;
+    border: solid 3px #fff;
+    background: #ddd;
+    float: left;
+    margin: 30px;
+    position: relative;
+    /*ombra di sfondo sotto alle carte*/
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.card span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    line-height: 320px;
+    text-align: center;
+}
+
+#you {
+    color: #910202;
+    border: #910202 10px double;
+}
+
+#cpu {
+    color: #092456;
+    border: #092456 10px double;
+}
+
+#you,
+#cpu {
+    padding: 50px;
+    font-size: 9em;
+}
+
+.sfidanti {
+    font-size: 1.3em;
+}
+
+#sf1 {
+    /*you scritta*/
+    position: fixed;
+    top: 495px;
+    left: 500px;
+    color: #910202;
+    border-bottom: 1px dashed black;
+}
+
+#sf2 {
+    /*cpu scritta*/
+    position: fixed;
+    top: 495px;
+    left: 805px;
+    color: #092456;
+    border-bottom: 1px dashed black;
+}
+
+
+#gioca {
+    display: block;
+    background: #dced17;
+    color: #222;
+    border: groove 3px #dced17;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    padding: 7px 15px;
+    display: block;
+    width: 180px;
+    text-align: center;
+    cursor: pointer;
+    margin: 15px auto;
+    font-family: sans-serif;
+}
+
+#gioca:hover {
+    background: transparent;
+    color: #dced17;
+    border-radius: 5px;
+}

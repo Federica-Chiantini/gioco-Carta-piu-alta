@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La carta più alta</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/stile.css">
+    
+</head>
+<body>
+    <main>
+        <h1>Estrai la carta più alta</h1>
+
+        <section>
+
+            <div id="you" class="card"><!--YOU-->
+                <span> &#10084; </span> <!--cuore-->
+            </div>            
+            <div class="sfidanti" id="sf1"> YOU &#10084; <span>0</span></div> <!--targhetta con nome dello sfidante e conteggio dei punti-->
+
+            <div id="cpu" class="card"><!--CPU-->
+                <span> &#9733; </span> <!--stella-->
+            </div>
+            <div class="sfidanti" id="sf2"> CPU &#9733; <span>0</span></div> <!--targhetta con nome dello sfidante e conteggio dei punti-->
+
+        </section>
+
+        <button id="gioca">Gioca</button>
+
+    </main>
+        
+    <h2 id="messaggio"></h2>
+    
+
+    <script src="script/gioco.js"></script>
+
+</body>
+</html>
